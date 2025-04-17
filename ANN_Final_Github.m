@@ -66,7 +66,7 @@ Vmax = max(Vs(:));                 % Max shear velocity
 dts = 0.9 / (Vmax * sqrt(1/dx^2 + 1/dz^2));  % Stable time step
 ts = 0:dts:tmax; nts = length(ts);           % Time axis
 
-%% Solving wave propagation replaced by file data %%
+%% Solving wave equation using FTDT replaced by file data %%
 
 load('seismic_wavefield_void.mat')
 
