@@ -13,6 +13,7 @@ This project explores the use of **artificial neural networks (ANNs)** to learn 
 
 Once trained, the ANN can approximate wavefield responses for different geometries without testing, offering a flexible tool for supporting survey design and decision-making.
 
+
 ---
 
 ## 🧠 Wavefield Prediction Using Neural Networks
