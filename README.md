@@ -54,9 +54,14 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ![Truemodel](figure/Truemodel.png)
 
+
 **Test configuration**
 
 ![Test Configuration](figure/testconfigure.png)
+
+
+(figure/wavefield_video.mp4)
+
 
 **Measured data recorded at the first source**
 
