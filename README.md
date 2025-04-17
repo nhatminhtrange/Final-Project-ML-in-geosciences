@@ -16,7 +16,7 @@ Once trained, the ANN can approximate wavefield responses for different geometri
 
 ## 🧠 Wavefield Prediction Using Neural Networks
 
-This project demonstrates a data-driven approach to predict seismic wavefields using a feedforward artificial neural network (ANN). Rather than simulating wave propagation through numerical methods for every scenario, the ANN learns to map from acquisition geometry to the resulting wavefield.
+This project presents a data-driven approach for predicting seismic wavefields using a feedforward artificial neural network (ANN). Instead of physically collecting seismic data for every possible source–receiver configuration, the ANN is trained to learn the underlying relationship between acquisition geometry and the resulting wavefield. Once trained, the model can predict wavefield responses for new or missing source positions, offering a flexible tool for survey design and planning.
 
 ### How It Works
 
@@ -75,7 +75,7 @@ This project demonstrates a data-driven approach to predict seismic wavefields u
 ## 📬 Contact
 
 For questions or suggestions, feel free to reach out!
-
+Email: tran.nhat@ufl.edu
 ---
 
 © 2025 – Final Project for Machine Learning in Geosciences
