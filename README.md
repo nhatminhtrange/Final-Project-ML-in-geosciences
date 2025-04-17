@@ -23,7 +23,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 ### How It Works
 
 - **Input to ANN**: Normalized source–receiver geometry (e.g., relative distance matrix).
-- **Output from ANN**: Normalized seismic wavefield recordings at the surface.
+- **Output from ANN**: Normalized seismic wavefield recordings at the surface. 
 - **Architecture**: Deep feedforward neural network with ReLU activations:
 
 [ANN Architecture (Example from https://alexlenail.me/NN-SVG/)](https://alexlenail.me/NN-SVG/)
@@ -32,7 +32,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 
 - **Training Data**: Synthetic wavefields generated using finite-difference simulations.
-- **Target Use**: Predicting full surface wavefield for unseen or hypothetical source positions.
+- **Target Use**: Predicting full surface wavefield for unseen or hypothetical source positions. This result can be used to apply Full Waveform Inversion (FWI).
 
 ---
 
@@ -47,7 +47,6 @@ This project presents a data-driven approach for predicting seismic wavefields u
 ---
 
 
-
 ## 📊 Example Outputs
 
 To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model with void** that serves as a simplified representation of **field data**. This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
@@ -59,6 +58,9 @@ The true model contains essential subsurface features that influence SH and Love
 
 ### **Test configuration**
 <img src="figure/testconfigure.png" alt="Test Configuration" width="500"/>
+
+### **Test configuration in the field**
+<img src="figure/Field.png" alt="Test Configuration in the field" width="500"/>
 
 This figure illustrates the testing configuration, including source and receiver layout, model boundaries, and simulation domain.
 
