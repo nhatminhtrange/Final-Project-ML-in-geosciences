@@ -53,37 +53,37 @@ This project presents a data-driven approach for predicting seismic wavefields u
 To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model** that serves as a simplified representation of **field data**. This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
 
 ### **True model to generate wave field**
-<img src="figure/Truemodel.png" alt="Truemodel" width="250"/>
+<img src="figure/Truemodel.png" alt="Truemodel" width="500"/>
 
 The true model contains essential subsurface features that influence Love wave propagation. It acts as the ground truth for generating synthetic wavefields.
 
 ### **Test configuration**
-<img src="figure/testconfigure.png" alt="Test Configuration" width="250"/>
+<img src="figure/testconfigure.png" alt="Test Configuration" width="500"/>
 
 This figure illustrates the testing configuration, including source and receiver layout, model boundaries, and simulation domain.
 
 ### **Synthetic field generation**
-<img src="figure/wavefield_video.gif" alt="Wavefield Simulation" width="250"/>
+<img src="figure/wavefield_video.gif" alt="Wavefield Simulation" width="500"/>
 
 A synthetic wavefield is simulated using a finite-difference time-domain (FDTD) solver under the predefined model. This wavefield serves as the target output during neural network training.
 
 ### **Measured data recorded at the first source**
-<img src="figure/DD.png" alt="Measured data" width="250"/>
+<img src="figure/DD.png" alt="Measured data" width="500"/>
 
 This plot shows the synthetic data (as if measured in the field) recorded at the first source location. It is used as ground truth during model training and evaluation.
 
 ### **Predicted data at the first source**
-<img src="figure/Wavefield1.png" alt="Wavefield at Beginning" width="250"/>
+<img src="figure/Wavefield1.png" alt="Wavefield at Beginning" width="500"/>
 
 Prediction results at the first source show strong agreement with the measured data, indicating the model can accurately learn the underlying wavefield structure.
 
 ### **Predicted data at the middle source**
-<img src="figure/Wavefield2.png" alt="Wavefield at Middle" width="250"/>
+<img src="figure/Wavefield2.png" alt="Wavefield at Middle" width="500"/>
 
 At the middle source, the predicted wavefield also closely follows the true wavefield, validating the generalization of the trained model.
 
 ### **Predicted data at the last source**
-<img src="figure/Wavefield3.png" alt="Wavefield at End" width="250"/>
+<img src="figure/Wavefield3.png" alt="Wavefield at End" width="500"/>
 
 The prediction at the last source confirms the robustness of the network across different source locations within the model.
 
