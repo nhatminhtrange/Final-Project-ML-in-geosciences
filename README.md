@@ -65,7 +65,7 @@ This figure illustrates the testing configuration, including source and receiver
 ### **Synthetic field generation**
 <img src="figure/wavefield_video.gif" alt="Wavefield Simulation" width="500"/>
 
-A synthetic wavefield  with the first source  is simulated using a finite-difference time-domain (FDTD) solver under the predefined model, and with PML (absorbing boundary condition). This wavefield serves as the target output during neural network training.
+A synthetic wavefield  with the first source  is simulated using a finite-difference time-domain (FDTD) solver under the predefined model, and with PML (absorbing boundary condition). This wavefield serves as the target output during neural network training. Note that only one source is shown here. For the training data, we use 13 sources as shown in the test configuration.
 
 ### **Measured data recorded at the first source**
 <img src="figure/DD.png" alt="Measured data" width="500"/>
