@@ -65,11 +65,15 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ![Measured data](figure/DD.png)
 
-**Predicted data**
+**Predicted data at the first source**
 
 ![Wavefield at Beginning](figure/Wavefield1.png)
 
+**Predicted data at the midlle source**
+
 ![Wavefield at Middle](figure/Wavefield2.png)
+
+**Predicted data at the last source**
 
 ![Wavefield at End](figure/Wavefield3.png)
 
