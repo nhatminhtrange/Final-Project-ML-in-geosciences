@@ -28,7 +28,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 [ANN Architecture (Example from https://alexlenail.me/NN-SVG/)](https://alexlenail.me/NN-SVG/)
 
-![Truemodel](figure\ANN.png)
+![ANN](figure/ANN.png)
 
 
 - **Training Data**: Synthetic wavefields generated using finite-difference simulations.
@@ -55,23 +55,23 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 **True model to generate wave field**
 
-![Truemodel](figure\Truemodel.png)
+![Truemodel](figure/Truemodel.png)
 
 **Test configuration**
 
-![Test Configuration](figure\testconfigure.png)
+![Test Configuration](figure/testconfigure.png)
 
 **Measured data recorded at the first source**
 
-![Measured data](figure\DD.png)
+![Measured data](figure/DD.png)
 
 **Predicted data**
 
-![Wavefield at Beginning](figure\Wavefield1.png)
+![Wavefield at Beginning](figure/Wavefield1.png)
 
-![Wavefield at Middle](figure\Wavefield2.png)
+![Wavefield at Middle](figure/Wavefield2.png)
 
-![Wavefield at End](figure\Wavefield3.png)
+![Wavefield at End](figure/Wavefield3.png)
 
 ---
 
