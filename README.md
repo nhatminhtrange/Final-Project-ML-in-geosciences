@@ -26,7 +26,9 @@ This project presents a data-driven approach for predicting seismic wavefields u
 - **Output from ANN**: Normalized seismic wavefield recordings at the surface.
 - **Architecture**: Deep feedforward neural network with ReLU activations:
 
+[ANN Architecture (Example from https://alexlenail.me/NN-SVG/)](https://alexlenail.me/NN-SVG/)
 
+![Truemodel](figure\ANN.png)
 
 
 - **Training Data**: Synthetic wavefields generated using finite-difference simulations.
@@ -53,23 +55,23 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 **True model to generate wave field**
 
-![Truemodel](Truemodel.png)
+![Truemodel](figure\Truemodel.png)
 
 **Test configuration**
 
-![Test Configuration](testconfigure.png)
+![Test Configuration](figure\testconfigure.png)
 
 **Measured data recorded at the first source**
 
-![Measured data](DD.png)
+![Measured data](figure\DD.png)
 
 **Predicted data**
 
-![Wavefield at Beginning](Wavefield1.png)
+![Wavefield at Beginning](figure\Wavefield1.png)
 
-![Wavefield at Middle](Wavefield2.png)
+![Wavefield at Middle](figure\Wavefield2.png)
 
-![Wavefield at End](Wavefield3.png)
+![Wavefield at End](figure\Wavefield3.png)
 
 ---
 
