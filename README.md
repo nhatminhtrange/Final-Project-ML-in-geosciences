@@ -49,9 +49,9 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ## 📊 Example Outputs
 
-| True Wavefield | 
 | ![Truemodel](Truemodel.png) |
 
+| ![Wavefield at Beginning](Wavefield1.png) | ![Wavefield at Middle](Wavefield2.png) | ![Wavefield at End](Wavefield3.png) |
 
 ---
 
