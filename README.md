@@ -51,7 +51,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 | True Wavefield | Predicted Wavefield |
 |----------------|---------------------|
-| ![true_model](figures/true_model.png) | ![prediction](figures/wavefield_prediction.png) |
+| ![true_model](true_model.png) | ![prediction](figures/wavefield_prediction.png) |
 
 ---
 
