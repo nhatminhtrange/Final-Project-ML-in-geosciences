@@ -49,9 +49,9 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ## 📊 Example Outputs
 
-| True Wavefield | Predicted Wavefield |
-|----------------|---------------------|
-| ![True model](True model.png) | ![prediction](figures/wavefield_prediction.png) |
+| True Wavefield | 
+| ![True model](True model.png) |
+
 
 ---
 
