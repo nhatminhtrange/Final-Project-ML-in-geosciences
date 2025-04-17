@@ -44,7 +44,7 @@ for i = 1:Ns
     end
 end
 
-%%% Step 1: Define the True Model %%%
+%%% Define the True Model %%%
 Vs = 300 * ones(nz,nx);             % Initialize Vs as constant
 
 % Create a void (low-velocity zone) in the model
@@ -66,7 +66,12 @@ Vmax = max(Vs(:));                 % Max shear velocity
 dts = 0.9 / (Vmax * sqrt(1/dx^2 + 1/dz^2));  % Stable time step
 ts = 0:dts:tmax; nts = length(ts);           % Time axis
 
+%% Solving wave propagation replaced by file data %%
+
 load('seismic_wavefield_void.mat')
+
+%% =================================================
+
 
 %%% Plot recorded data for the first source %%%
 figure(2);
