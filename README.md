@@ -10,7 +10,7 @@ This project explores the use of **artificial neural networks (ANNs)** to learn 
 - Assist in the design and evaluation of field test configurations.
 - Provide insight into the sensitivity of wavefields to acquisition geometry.
 
-Once trained, the ANN can approximate wavefield responses for different geometries without rerunning simulations, offering a flexible tool for supporting survey design and decision-making.
+Once trained, the ANN can approximate wavefield responses for different geometries without testing, offering a flexible tool for supporting survey design and decision-making.
 
 ---
 
