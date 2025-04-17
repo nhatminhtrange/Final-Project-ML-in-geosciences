@@ -52,15 +52,19 @@ This project presents a data-driven approach for predicting seismic wavefields u
 ## 📊 Example Outputs
 True model to generate wave field
 
-| ![Truemodel](Truemodel.png) |
+![Truemodel](Truemodel.png) 
 
 Measured data recorded at the first source
 
-| ![Measured data](DD.png) | 
+![Measured data](DD.png) 
 
 Predicted data
 
-| ![Wavefield at Beginning](Wavefield1.png) | ![Wavefield at Middle](Wavefield2.png) | ![Wavefield at End](Wavefield3.png) |
+![Wavefield at Beginning](Wavefield1.png) 
+
+![Wavefield at Middle](Wavefield2.png) 
+
+![Wavefield at End](Wavefield3.png) 
 
 ---
 
