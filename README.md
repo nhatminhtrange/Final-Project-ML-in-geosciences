@@ -59,8 +59,9 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ![Test Configuration](figure/testconfigure.png)
 
+**Synthetic field generation**
 
-![Wavefield Simulation](figure/wavefield_loop.gif)
+![Wavefield Simulation](figure/wavefield_video.gif)
 
 
 **Measured data recorded at the first source**
