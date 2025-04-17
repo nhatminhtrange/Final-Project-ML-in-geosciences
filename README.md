@@ -15,26 +15,54 @@ The idea is simple but powerful: once trained on synthetic (or real) data, the A
 
 
 
-this project demonstrates how to train an Artificial Neural Network (ANN) to predict surface wavefields based on synthetic data (can use experiment data).
+# 🧠 Wavefield Prediction Using Neural Networks
 
-Key Features
-- 2D SH-wave simulation using FDTD
-- True model with low-velocity inclusion (void)
-- Source-receiver setup for surface wave acquisition
-- ANN to predict wavefield based on source-receiver geometry
-- Supports arbitrary source prediction
+This project demonstrates a data-driven approach to predict seismic wavefields using artificial neural networks (ANNs). Instead of repeatedly solving wave equations (e.g., via FDTD), we use ANNs to learn the relationship between source–receiver geometry and the corresponding wavefield. Once trained, the network can quickly predict surface or full wavefields for arbitrary source locations.
 
-- Input: normalized source-receiver distances
-- Output: normalized surface wavefield (flattened)
-- Deep Feedforward Network:
-  - 512 → ReLU → 1024 → ReLU → 2048 → ReLU → Output
- - Make sure you have MATLAB with Deep Learning Toolbox
-  
-2. Run `main.m` to:
-   - Simulate wavefields
-   - Train the ANN
-   - Predict wavefields for new sources
+---
 
+## 🔍 Motivation
+
+Forward simulations of seismic wave propagation are computationally expensive, especially in full waveform inversion (FWI) or sensitivity studies involving many sources. This project addresses that challenge by training a neural network on synthetic wavefield data, enabling near-instantaneous prediction of seismic responses without needing to solve the underlying PDE again.
+
+---
+
+## 🔑 Key Features
+
+- Uses synthetic or real wavefield data (horizontal component)  
+- Includes a customizable velocity and density model with anomalies  
+- Source–receiver configuration for surface acquisition  
+- **ANN predicts wavefields** based on source–receiver geometry  
+- Supports wavefield prediction for **new, unseen source locations**  
+- **Input to ANN**: normalized source–receiver distances  
+- **Output from ANN**: normalized surface wavefield (flattened)  
+- Deep feedforward network architecture:  
+  `512 → ReLU → 1024 → ReLU → 2048 → ReLU → Output`  
+- Implemented in **MATLAB** with Deep Learning Toolbox support  
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+Wavefield-Prediction-ANN/
+│
+├── README.md                 # Project documentation
+├── LICENSE                  # Optional: MIT or your preferred license
+├── data/
+│   └── 1st round_big.mat     # True model: velocity and density
+│
+├── src/
+│   ├── main.m                # Main script: simulation + training + prediction
+│   ├── Elastic2D_wavefield_fw.m  # Forward simulation (FDTD)
+│   └── network_training.m    # (Optional) ANN training logic
+│
+├── figures/
+│   └── true_model.png
+│   └── wavefield_prediction.png
+│
+└── utils/
+    └── (optional helper functions)
 
 
 
