@@ -46,10 +46,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ---
 
-## 📂 Project Structure
 
-
----
 
 ## 📊 Example Outputs
 
