@@ -17,28 +17,27 @@ The idea is simple but powerful: once trained on synthetic (or real) data, the A
 
 # 🧠 Wavefield Prediction Using Neural Networks
 
-This project demonstrates a data-driven approach to predict seismic wavefields using artificial neural networks (ANNs). Instead of repeatedly solving wave equations (e.g., via FDTD), we use ANNs to learn the relationship between source–receiver geometry and the corresponding wavefield. Once trained, the network can quickly predict surface or full wavefields for arbitrary source locations.
+This project demonstrates a data-driven approach to predict seismic wavefields using artificial neural networks (ANNs). Instead of relying on repeated numerical simulations, a neural network is trained to directly map the source–receiver geometry to recorded wavefield responses. Once trained, the model can efficiently generate wavefield predictions for new source locations.
 
 ---
 
 ## 🔍 Motivation
 
-Forward simulations of seismic wave propagation are computationally expensive, especially in full waveform inversion (FWI) or sensitivity studies involving many sources. This project addresses that challenge by training a neural network on synthetic wavefield data, enabling near-instantaneous prediction of seismic responses without needing to solve the underlying PDE again.
+Seismic wavefield modeling and inversion typically require significant computational resources, especially when handling dense source arrays. This project explores the use of neural networks as surrogate models that can rapidly approximate surface wavefield recordings, enabling faster analysis and potential integration into real-time or near real-time applications.
 
 ---
 
 ## 🔑 Key Features
 
-- Uses synthetic or real wavefield data (horizontal component)  
-- Includes a customizable velocity and density model with anomalies  
-- Source–receiver configuration for surface acquisition  
-- **ANN predicts wavefields** based on source–receiver geometry  
-- Supports wavefield prediction for **new, unseen source locations**  
-- **Input to ANN**: normalized source–receiver distances  
-- **Output from ANN**: normalized surface wavefield (flattened)  
-- Deep feedforward network architecture:  
+- Works with 2D seismic data with horizontal motion components  
+- Supports arbitrary source–receiver configurations  
+- Learns the mapping between **source–receiver distances** and corresponding **wavefield recordings**  
+- Predicts surface wavefield for unseen source locations  
+- **Input to ANN**: normalized source–receiver distance matrix  
+- **Output from ANN**: normalized seismic wavefield recordings (flattened)  
+- Deep feedforward neural network architecture:  
   `512 → ReLU → 1024 → ReLU → 2048 → ReLU → Output`  
-- Implemented in **MATLAB** with Deep Learning Toolbox support  
+- Implemented in **MATLAB** with Deep Learning Toolbox  
 
 ---
 
@@ -47,22 +46,19 @@ Forward simulations of seismic wave propagation are computationally expensive, e
 ```plaintext
 Wavefield-Prediction-ANN/
 │
-├── README.md                 # Project documentation
-├── LICENSE                  # Optional: MIT or your preferred license
+├── README.md
+├── LICENSE
 ├── data/
-│   └── 1st round_big.mat     # True model: velocity and density
+│   └── seismic_dataset.mat       # Contains input geometry and wavefield data
 │
 ├── src/
-│   ├── main.m                # Main script: simulation + training + prediction
-│   ├── Elastic2D_wavefield_fw.m  # Forward simulation (FDTD)
-│   └── network_training.m    # (Optional) ANN training logic
+│   ├── main.m                    # Main script: load, train, and predict
+│   └── Elastic2D_wavefield_fw.m  # (Optional) helper for forward simulation
 │
 ├── figures/
 │   └── true_model.png
 │   └── wavefield_prediction.png
-│
-└── utils/
-    └── (optional helper functions)
+
 
 
 
