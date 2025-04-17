@@ -1,65 +1,82 @@
-# Final Project - Machine Learning in Geosciences
+# Final Project – Machine Learning in Geosciences
 
-* Introduction
+## 📌 Introduction
 
-In many geophysical applications such as seismic modeling or full waveform inversion (FWI), forward simulations (e.g., using finite-difference methods) are computationally expensive and time-consuming—especially when repeated for multiple source configurations.
+In field geophysical surveys, the ability to design and evaluate acquisition configurations—such as source and receiver placement—is essential for collecting useful seismic data. However, practical limitations often arise: not enough geophones, missing source positions, difficult terrain, or time constraints. 
 
-This project explores the use of artificial neural networks (ANNs) to learn the relationship between source-receiver geometry and the resulting seismic wavefield, with the goal of:
+This project explores the use of **artificial neural networks (ANNs)** to learn the relationship between **source–receiver geometry** and the resulting **seismic wavefield**. Using **synthetic data as a proxy for field data**, the trained model can help:
 
-Replacing repeated numerical simulations with a fast, data-driven alternative.
+- Predict wavefield recordings at the surface for new or missing source positions.
+- Assist in the design and evaluation of field test configurations.
+- Provide insight into the sensitivity of wavefields to acquisition geometry.
 
-Predicting surface or full wavefields for new source locations without solving the wave equation again.
-
-The idea is simple but powerful: once trained on synthetic (or real) data, the ANN can act as a surrogate model, enabling fast approximations of complex wave phenomena in near real-time.
-
-
-
-
-# 🧠 Wavefield Prediction Using Neural Networks
-
-This project demonstrates a data-driven approach to predict seismic wavefields using artificial neural networks (ANNs). Instead of relying on repeated numerical simulations, a neural network is trained to directly map the source–receiver geometry to recorded wavefield responses. Once trained, the model can efficiently generate wavefield predictions for new source locations.
+Once trained, the ANN can approximate wavefield responses for different geometries without rerunning simulations, offering a flexible tool for supporting survey design and decision-making.
 
 ---
 
-## 🔍 Motivation
+## 🧠 Wavefield Prediction Using Neural Networks
 
-Seismic wavefield modeling and inversion typically require significant computational resources, especially when handling dense source arrays. This project explores the use of neural networks as surrogate models that can rapidly approximate surface wavefield recordings, enabling faster analysis and potential integration into real-time or near real-time applications.
+This project demonstrates a data-driven approach to predict seismic wavefields using a feedforward artificial neural network (ANN). Rather than simulating wave propagation through numerical methods for every scenario, the ANN learns to map from acquisition geometry to the resulting wavefield.
+
+### How It Works
+
+- **Input to ANN**: Normalized source–receiver geometry (e.g., relative distance matrix).
+- **Output from ANN**: Normalized seismic wavefield recordings at the surface.
+- **Architecture**: Deep feedforward neural network with ReLU activations:
+
+
+
+
+- **Training Data**: Synthetic wavefields generated using finite-difference simulations.
+- **Target Use**: Predicting full surface wavefield for unseen or hypothetical source positions.
 
 ---
 
 ## 🔑 Key Features
 
-- Works with 2D seismic data with horizontal motion components  
-- Supports arbitrary source–receiver configurations  
-- Learns the mapping between **source–receiver distances** and corresponding **wavefield recordings**  
-- Predicts surface wavefield for unseen source locations  
-- **Input to ANN**: normalized source–receiver distance matrix  
-- **Output from ANN**: normalized seismic wavefield recordings (flattened)  
-- Deep feedforward neural network architecture:  
-  `512 → ReLU → 1024 → ReLU → 2048 → ReLU → Output`  
-- Implemented in **MATLAB** with Deep Learning Toolbox  
+- Works with 2D seismic wavefield data (e.g., horizontal component).
+- Supports arbitrary source–receiver configurations.
+- Learns the geometry-to-wavefield mapping from synthetic data.
+- Predicts wavefield responses for new source positions.
+- Implemented in MATLAB using the Deep Learning Toolbox.
 
 ---
 
 ## 📂 Project Structure
 
-```plaintext
-Wavefield-Prediction-ANN/
-│
-├── README.md
-├── LICENSE
-├── data/
-│   └── seismic_dataset.mat       # Contains input geometry and wavefield data
-│
-├── src/
-│   ├── main.m                    # Main script: load, train, and predict
-│   └── Elastic2D_wavefield_fw.m  # (Optional) helper for forward simulation
-│
-├── figures/
-│   └── true_model.png
-│   └── wavefield_prediction.png
 
+---
 
+## 📊 Example Outputs
 
+| True Wavefield | Predicted Wavefield |
+|----------------|---------------------|
+| ![true_model](figures/true_model.png) | ![prediction](figures/wavefield_prediction.png) |
 
+---
+
+## ✅ Potential Applications
+
+- Planning seismic surveys with incomplete or limited equipment
+- Testing different source layouts virtually before field deployment
+- Estimating wavefield coverage with fewer measurements
+- Educating or demonstrating wave propagation behavior interactively
+
+---
+
+## 🛠️ Requirements
+
+- MATLAB R2021a or later
+- Deep Learning Toolbox
+- (Optional) Parallel Computing Toolbox for faster training
+
+---
+
+## 📬 Contact
+
+For questions or suggestions, feel free to reach out!
+
+---
+
+© 2025 – Final Project for Machine Learning in Geosciences
 
