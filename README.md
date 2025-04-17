@@ -60,7 +60,7 @@ The true model contains essential subsurface features that influence SH and Love
 <img src="figure/testconfigure.png" alt="Test Configuration" width="500"/>
 
 ### **Test configuration in the field**
-<img src="figure/Field.png" alt="Test Configuration in the field" width="500"/>
+<img src="figure/Field.jpg" alt="Test Configuration in the field" width="500"/>
 
 This figure illustrates the testing configuration, including source and receiver layout, model boundaries, and simulation domain.
 
