@@ -6,6 +6,7 @@ In field geophysical surveys, the ability to design and evaluate acquisition con
 
 This project explores the use of **artificial neural networks (ANNs)** to learn the relationship between **source–receiver geometry** and the resulting **seismic wavefield**. Using **synthetic data as a proxy for field data**, the trained model can help:
 
+
 - Predict wavefield recordings at the surface for new or missing source positions.
 - Assist in the design and evaluation of field test configurations.
 - Provide insight into the sensitivity of wavefields to acquisition geometry.
