@@ -12,8 +12,8 @@ Key Features
 - Output: normalized surface wavefield (flattened)
 - Deep Feedforward Network:
   - 512 → ReLU → 1024 → ReLU → 2048 → ReLU → Output
- - 1. Make sure you have MATLAB with Deep Learning Toolbox
-   2. 
+ - Make sure you have MATLAB with Deep Learning Toolbox
+  
 2. Run `main.m` to:
    - Simulate wavefields
    - Train the ANN
