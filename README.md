@@ -50,12 +50,12 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ## 📊 Example Outputs
 
-To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model** that serves as a simplified representation of **field data**. This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
+To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model with void** that serves as a simplified representation of **field data**. This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
 
 ### **True model to generate wave field**
 <img src="figure/Truemodel.png" alt="Truemodel" width="500"/>
 
-The true model contains essential subsurface features that influence Love wave propagation. It acts as the ground truth for generating synthetic wavefields.
+The true model contains essential subsurface features that influence SH and Love wave propagation. It acts as the ground truth for generating synthetic wavefields.
 
 ### **Test configuration**
 <img src="figure/testconfigure.png" alt="Test Configuration" width="500"/>
@@ -65,12 +65,12 @@ This figure illustrates the testing configuration, including source and receiver
 ### **Synthetic field generation**
 <img src="figure/wavefield_video.gif" alt="Wavefield Simulation" width="500"/>
 
-A synthetic wavefield is simulated using a finite-difference time-domain (FDTD) solver under the predefined model. This wavefield serves as the target output during neural network training.
+A synthetic wavefield  with the first source  is simulated using a finite-difference time-domain (FDTD) solver under the predefined model, and with PML (absorbing boundary condition). This wavefield serves as the target output during neural network training.
 
 ### **Measured data recorded at the first source**
 <img src="figure/DD.png" alt="Measured data" width="500"/>
 
-This plot shows the synthetic data (as if measured in the field) recorded at the first source location. It is used as ground truth during model training and evaluation.
+This plot shows the synthetic data (as if measured in the field) recorded at the first source location. It is used as ground truth during model training and evaluation. There is a reflected wave propagating backward when the wave reaches the void.
 
 ### **Predicted data at the first source**
 <img src="figure/Wavefield1.png" alt="Wavefield at Beginning" width="500"/>
