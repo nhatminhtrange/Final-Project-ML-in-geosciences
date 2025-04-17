@@ -1,4 +1,4 @@
-# MLcourse
+# Final Project - Machine Learning in Geosciences
 this project demonstrates how to train an Artificial Neural Network (ANN) to predict surface wavefields based on synthetic data (can use experiment data).
 
 Key Features
