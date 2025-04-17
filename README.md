@@ -19,7 +19,15 @@ Key Features
    - Train the ANN
    - Predict wavefields for new sources
 
+In many geophysical applications such as seismic modeling or full waveform inversion (FWI), forward simulations (e.g., using finite-difference methods) are computationally expensive and time-consuming—especially when repeated for multiple source configurations.
 
+This project explores the use of artificial neural networks (ANNs) to learn the relationship between source-receiver geometry and the resulting seismic wavefield, with the goal of:
+
+Replacing repeated numerical simulations with a fast, data-driven alternative.
+
+Predicting surface or full wavefields for new source locations without solving the wave equation again.
+
+The idea is simple but powerful: once trained on synthetic (or real) data, the ANN can act as a surrogate model, enabling fast approximations of complex wave phenomena in near real-time.
 
 
 
