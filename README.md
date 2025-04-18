@@ -74,17 +74,17 @@ A synthetic wavefield  with the first source  is simulated using a finite-differ
 
 This plot shows the synthetic data (as if measured in the field) recorded at the first source location. It is used as ground truth during model training and evaluation. There is a reflected wave propagating backward when the wave reaches the void.
 
-### **Predicted data at the first source**
+### **Predicted data with new array of receivers at the first source**
 <img src="figure/Wavefield1.png" alt="Wavefield at Beginning" width="500"/>
 
 Prediction results at the first source show strong agreement with the measured data, indicating the model can accurately learn the underlying wavefield structure.
 
-### **Predicted data at the middle source**
+### **Predicted data with new array of receivers at the middle source**
 <img src="figure/Wavefield2.png" alt="Wavefield at Middle" width="500"/>
 
 At the middle source, the predicted wavefield also closely follows the true wavefield, validating the generalization of the trained model.
 
-### **Predicted data at the last source**
+### **Predicted data with new array of receivers at the last source**
 <img src="figure/Wavefield3.png" alt="Wavefield at End" width="500"/>
 
 The prediction at the last source confirms the robustness of the network across different source locations within the model.
