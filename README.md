@@ -59,15 +59,15 @@ The true model contains essential subsurface features that influence SH and Love
 ### **Test configuration**
 <img src="figure/testconfigure.png" alt="Test Configuration" width="500"/>
 
+This figure illustrates the testing configuration, including source and receiver layout, model boundaries, and simulation domain.
+
 ### **Test configuration in the field**
 <img src="figure/Field.jpg" alt="Test Configuration in the field" width="500"/>
-
-This figure illustrates the testing configuration, including source and receiver layout, model boundaries, and simulation domain.
 
 ### **Synthetic field generation**
 <img src="figure/wavefield_video.gif" alt="Wavefield Simulation" width="500"/>
 
-A synthetic wavefield  with the first source  is simulated using a finite-difference time-domain (FDTD) solver under the predefined model, and with PML (absorbing boundary condition). This wavefield serves as the target output during neural network training. Note that only one source is shown here. For the training data, we use 13 sources as shown in the test configuration.
+A synthetic wavefield  with the first source  is simulated using a finite-difference time-domain (FDTD) solver under the predefined model, and with PML (absorbing boundary condition). This wavefield recorded at 24 geophones serves as the target output during neural network training. Note that only one source is shown here. For the training data, we use 13 sources as shown in the test configuration.
 
 ### **Measured data recorded at the first source**
 <img src="figure/DD.png" alt="Measured data" width="500"/>
