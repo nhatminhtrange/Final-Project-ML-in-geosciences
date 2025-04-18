@@ -49,7 +49,7 @@ This project presents a data-driven approach for predicting seismic wavefields u
 
 ## 📊 Example Outputs
 
-To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model with void** that serves as a simplified representation of **field data**. This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
+To test the feasibility of this approach, we conducted a controlled experiment using a **synthetic model with void** that serves as a simplified representation of **field data** with 13 sources, 24 receivers, and 220 time steps (0.35s). This setup allows us to evaluate the performance of our method under known conditions before applying it to real-world scenarios.
 
 ### **True model to generate wave field**
 <img src="figure/Truemodel.png" alt="Truemodel" width="500"/>
